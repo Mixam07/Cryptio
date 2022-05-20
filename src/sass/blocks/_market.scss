@@ -1,0 +1,50 @@
+.market{
+  margin-bottom: 184px;
+  &__item{
+    position: relative;
+    font-size: 24px;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #1A1A1A;
+    margin: 24px 0;
+    align-items: center;
+    transition: 0.6s transform, border, border-image-slice, border-image-source;
+    &:hover{
+      transform: scale(1.1);
+      border: 2px solid transparent;
+      border-image-slice : 30; 
+      border-image-source: linear-gradient(109.83deg, #FF814A 16.61%, #FFA825 35.74%, #F1F37C 117.21%);
+    }
+  }
+  &__name{
+    padding-left: 35px;
+    min-width: 150px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  &__btn{
+    button{
+      background: #212121;
+      padding: 14px 33px;
+      letter-spacing: 0.5px;
+      color: #D5D5D5;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  &__cost{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #D5D5D5;
+  }
+  &__stability{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  &__wrapper{
+    display: none;
+  }
+}

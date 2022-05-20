@@ -1,0 +1,11 @@
+.title{
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 90px;
+  background: $text-color;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  &_center{
+    text-align: center;
+  }
+}

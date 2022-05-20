@@ -1,0 +1,58 @@
+.organize{
+  margin-bottom: 325px;
+  &__container{
+    padding: 0 25px 0 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper{
+    margin-top: 210px;
+  }
+  &__descr{
+    margin-top: 65px;
+  }
+  &__screen{
+    width: 367px;
+    height: 795px;
+  }
+  &__list{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    color: #EBEBEB;
+    background: url("../icons/CheckCircle_white_33.svg") no-repeat left center;
+    padding-left: 80px;
+    margin-bottom: 25px;
+    max-width: 650px;
+  }
+  &__screen{
+    position: relative;
+    &:before{
+      z-index: -1;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 107px;
+      height: 93px;
+      border-radius: 50%;
+      background: rgba(255, 168, 37, 0.68);
+      box-shadow: 0px 0px 100px rgba(255, 168, 37, 0.68);
+    }
+    &:after{
+      z-index: -1;
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 110px;
+      height: 96px;
+      border-radius: 50%;
+      background: rgba(255, 168, 37, 0.68);
+      box-shadow: 0px 0px 100px rgba(255, 168, 37, 0.68);
+    }
+  }
+}

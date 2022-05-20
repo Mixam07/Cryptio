@@ -1,0 +1,330 @@
+@media (min-width: 1400px){
+  .phone{
+    transform: translateX(63px);
+  }
+}
+@media (max-width: 1350px){
+  .market__item:hover{
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 1300px){
+  .market__item:hover{
+    transform: scale(1);
+    border: none;
+  }
+}
+@media (max-width: 1200px){
+  .container{
+    max-width: 980px;/*940*/
+  }
+  .phone{
+    max-width: 400px;
+    .phone__schedule{
+      top: 25px;
+    }
+    .phone__statistics{
+      bottom: 25px;
+      right: 0px;
+    }
+    .phone__info{
+      transform: translateY(-50%);
+      left: -75px;
+    }
+    .phone__iPhone{
+      img{
+        height: 500px;
+      }
+    }
+  }
+  .market{
+    .market__graph{
+      img{
+        height: 40px;
+      }
+    }
+    .market__item{
+      font-size: 16px;
+    }
+    .market__name{
+      padding-left: 10px;
+      min-width: 100px;
+    }
+  }
+  .organize{
+    .organize__list{
+      padding-left: 50px;
+      max-width: 550px;
+    }
+  }
+  .pricing__container{
+    .pricing__kind{
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .pricing__item{
+      margin: 0 30px;
+    }
+    .pricing__item:last-child{
+      margin-top: 50px;
+    }
+  }
+}
+@media (max-width: 992px){
+  .container{
+    max-width: 740px;/*720*/
+  }
+  .phone{
+    display: none;
+  }
+  .market{
+    .market__btn{
+      button{
+        font-size: 16px;
+      }
+    }
+    .main{
+      display: none;
+    }
+    .market__wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    .market__cost{
+      margin-bottom: 15px;
+    }
+    .market__stability{
+      padding-left: 10px;
+    }
+  }
+  .organize{
+    .organize__container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .organize__screen{
+      margin-top: 100px;
+    }
+    .organize__list{
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 762px){
+  .container{
+    max-width: 560px;/*540*/
+  }
+  .subtitle{
+    font-size: 12px;
+    line-height: 40px;
+  }
+  .title{
+    font-size: 56px;
+    line-height: 76px;
+    span{
+      height: 50px;
+    }
+  }
+  .header{
+    padding-top: 75px;
+    .header__main{
+      display: none;
+    }
+    .header__wrapper{
+      margin: 0;
+    }
+    .header__hamburger{
+      display: flex;
+    }
+  }
+  .market{
+    margin-bottom: 100px;
+    .market__cost{
+      margin-bottom: 0;
+    }
+    .market__graph{
+      display: none;
+    }
+    .main{
+      display: block;
+    }
+    .market__wrapper{
+      display: none;
+    }
+  }
+  .organize{
+    margin-bottom: 100px;
+    .organize__wrapper{
+      margin-top: 0;
+    }
+  }
+  .pricing{
+    margin-bottom: 100px;
+    .pricing__item{
+      margin-bottom: 50px;
+      margin-top: 50px;
+      transition: 0s;
+      &:hover{
+        background: #202020;
+        transform: scale(1);
+        .pricing__left,
+        .pricing__right{
+          display: none;
+        }
+        .pricing__list{
+          background: url("../icons/CheckCircle_white_15.svg") no-repeat left center;
+        }
+        .pricing__btn{
+          button{
+            border: 1px solid #FFF;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 576px){
+  .title{
+    font-size: 46px;
+    span{
+      width: 75px;
+      height: 45px;
+    }
+  }
+  .container{
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .organize__list{
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .market{
+    .market__item{
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+  }
+  .footer__container{
+    flex-direction: column;
+    .first{
+      display: none;
+    }
+    .second{
+      display: block;
+    }
+    .footer__inf{
+      margin-bottom: 15px;
+    }
+    .footer__google_play{
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (max-width: 550px){
+  .market{
+    .market__item{
+      font-size: 12px;
+    }
+    .market__name{
+      min-width: 75px;
+    }
+    .market__btn{
+      button{
+        padding: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 450px){
+  .organize__screen{
+    width: calc(100% - 50px);
+    height: auto;
+    margin: 0 auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 400px){
+  .title{
+    font-size: 36px;
+    line-height: 56px;
+    span{
+      margin-left: 15px;
+      height: 40px;
+      div{
+        height: 4px;
+        width: 40px;
+      }
+    }
+  }
+  .pricing__list{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 350px){
+  .market{
+    .market__cost{
+      margin-bottom: 15px;
+    }
+    .market__item{
+      padding: 5px;
+    }
+    .main{
+      display: none;
+    }
+    .market__wrapper{
+      display: flex;
+    }
+  }
+}
+@media (max-width: 325px){
+  .title{
+    font-size: 28px;
+    line-height: 42px;
+    span{
+      margin-left: 15px;
+      height: 35px;
+      div{
+        height: 4px;
+        width: 40px;
+      }
+    }
+  }
+}
+@media (max-height: 540px){
+  .menu{
+    .menu__nav{
+      a{
+        font-size: 28px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+@media (max-height: 440px){
+  .menu{
+    .menu__logo{
+      img{
+        max-height: 35px;
+      }
+    }
+    .menu__close{
+      right: 20px;
+      top: 20px;
+      max-height: 35px;
+    }
+    .menu__nav{
+      a{
+        font-size: 18px;
+        padding: 10px 0;
+      }
+    }
+  }
+}

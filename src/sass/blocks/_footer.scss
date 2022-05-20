@@ -1,0 +1,65 @@
+.footer{
+  padding-bottom: 90px;
+  &__container{
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    color: #fff;
+  }
+  &__logo{
+    display: block;
+    margin-bottom: 25px;
+  }
+  &__link{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 25px;
+    display: block;
+    font-feature-settings: 'salt' on, 'liga' off;
+  }
+  &__links{
+    display: flex;
+    margin-bottom: 15px;
+ }
+  &__inf{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    a{
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  &__apps{
+    padding-right: 25px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__app_store,
+  &__google_play{
+    margin-top: 15px;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #D9DBE1;
+  }
+  &__end{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #D9DBE1;
+  }
+}
+.second{
+  display: none;
+}

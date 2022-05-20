@@ -1,0 +1,54 @@
+.canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.0);
+  z-index: -1;
+  .menu{
+    opacity: 0;
+    transition: 1s all;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    min-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    &__logo{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    &__nav{
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      a{
+        display: block;
+        width: calc(100% - 30px);
+        text-align: center;
+        margin: 15px;
+        font-size: 36px;
+        padding: 20px 0;
+        color: #fff;
+      }
+    }
+    &__close{
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+  }
+  &__active{
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    .menu{
+      left: 0;
+      opacity: 1;
+    }
+  }
+}

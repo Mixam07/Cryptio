@@ -1,0 +1,45 @@
+@import "base/nullstyle";
+@import "base/mixins";
+@import "base/variables";
+
+.container{
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+body{
+  max-width: 100%;
+  color: #fff;
+  background-color: #0B0B0B;
+  font-family: Inter;
+}
+.down{
+  color: #ED4C5C;
+}
+.up{
+  color: #20BF6B;
+}
+.subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 12px;
+  margin: 25px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #A5A5A5;
+}
+
+@import "blocks/organize";
+@import "blocks/panel";
+@import "blocks/footer";
+@import "blocks/pricing";
+@import "blocks/animate";
+@import "blocks/header";
+@import "blocks/market";
+@import "blocks/title";
+@import "blocks/media";
+
+.inactive{
+  color: #5F5F5F;
+}
